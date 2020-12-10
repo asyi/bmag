@@ -5,8 +5,7 @@
     "version": "1.0.0",
     "engines": {
         "ghost": ">=2.0.0",
-        "ghost-api": "v2",
-        "node": "12.10.0"
+        "ghost-api": "v2"
     },
     "license": "MIT",
     "screenshots": {
@@ -20,8 +19,7 @@
         "test:ci": "gscan --fatal --verbose .",
         "pretest": "gulp build",
         "preship": "yarn test",
-        "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi",
-        "start": "node"
+        "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
     },
     "author": {
         "name": "Ghost Foundation",
@@ -50,16 +48,18 @@
         "defaults"
     ],
     "devDependencies": {
-        "autoprefixer": "10.0.0",
+        "autoprefixer": "10.1.0",
         "cssnano": "4.1.10",
-        "gscan": "3.5.7",
+        "gscan": "3.6.0",
+        "gulp": "4.0.2",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "9.0.0",
-        "gulp-sourcemaps": "2.6.5",
+        "gulp-sourcemaps": "3.0.0",
         "gulp-uglify": "3.0.2",
         "gulp-util": "3.0.8",
         "gulp-watch": "5.0.1",
         "gulp-zip": "5.0.2",
+        "postcss": "8.2.0",
         "postcss-color-function": "4.1.0",
         "postcss-custom-properties": "10.0.0",
         "postcss-easy-import": "3.0.0"
@@ -83,9 +83,5 @@
                 "width": 2000
             }
         }
-    },
-    "dependencies": {
-        "gulp": "4.0.2",
-        "postcss": "^8.0.9"
     }
 }
