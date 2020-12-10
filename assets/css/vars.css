@@ -10,7 +10,8 @@
     --color-primary: #58658c;
     --color-secondary: #fff19a;
     --color-tertiary: #fcaf9a;
-    --color-base: #261610;
+    --color-base-faded: #261610;
+    --color-base: #020101;
     --color-border: #ddd;
     --color-bg: #f1f0f2;
 
@@ -18,6 +19,8 @@
     --font-sans-serif: 'Inter', sans-serif;
     --font-serif: 'Libre Baskerville', Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
+    --font-fancy-regular: 'Balgin';
+    --font-fancy-semi-bold: 'Balgin Semi Bold';
     --font-light: 100;
     --font-normal: 400;
     --font-bold: 700;
@@ -35,4 +38,15 @@
     --margin: 2rem;
     --radius: 0.5rem;
 
+}
+
+
+@font-face {
+    font-family: var(--font-fancy-regular);
+    src: url("../font/Balgin/Balgin Display Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: var(--font-fancy-semi-bold);
+    src: url("../font/Balgin/Balgin Display Semi Bold.ttf") format("truetype");
 }

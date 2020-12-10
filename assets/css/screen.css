@@ -20,7 +20,6 @@ production stylesheet in assets/built/screen.css using gulp dev
 @import "components/hamburger.css";
 @import "components/animations.css";
 
-
 /* Main - Theme styles
 /* ---------------------------------------------------------- */
 
@@ -387,6 +386,20 @@ body {
         transform: translateY(-4vw);
     }
 
+}
+
+/* Custom styles
+/* ---------------------------------------------------------- */
+.custom-h1 {
+    font-family: var(--font-fancy-semi-bold);
+    text-align: center;
+    font-size: 7.7rem;
+    color: var(--color-primary);
+    margin-top: 6.5vw;
+}
+
+.custom-h1 > a {
+    text-decoration: none;
 }
 
 
