@@ -1,21 +1,77 @@
-{{!< default}}
-{{!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template --}}
-
-{{#is "home"}}
-    {{#if @site.description}}
-    <header class="page-head">
-        <h2 class="page-head-title">{{@site.description}}</h2>
+{{!< default}} {{!-- The tag above means: insert everything in this file into the {body} of the default.hbs template
+    --}} {{#is "home" }} {{#if @site.description}} <header class="page-head">
+    <h2 class="page-head-title">{{@site.description}}</h2>
     </header>
     {{/if}}
-{{/is}}
+    {{/is}}
 
-<div class="post-feed">
-    {{#foreach posts}}
+    {{!-- <div class="post-feed">
+        {{#foreach posts}}
 
         {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
         {{> "post-card"}}
 
-    {{/foreach}}
-</div>
+        {{/foreach}}
+    </div> --}}
 
+    <main id="site-main" class="site-main">
+        <div id="swup" class="transition-fade" data-swup="1">
+            <h1 class="custom-h1"><a class="custom-h1-link" href="https://www.basicallymiddle.com">BMA</a></h1>
+
+
+            <article class="post-content post tag-submissions featured ">
+
+                <header class="post-content-header">
+                    <h1 class="post-content-title">An Invitation for Submissions &amp; Collaborations</h1>
+                </header>
+
+                <p class="post-content-excerpt">We are looking for writing, stories, digital illustrations, designs, and
+                    other works and art-foms.</p>
+
+                <div class="post-content-image">
+                    <img class="kg-image"
+                        src="https://res-5.cloudinary.com/htqvz5gpv/image/upload/q_auto/v1/ghost-blog-images/Rings-of-Saturn-Illustration2-01.png"
+                        alt="An Invitation for Submissions &amp; Collaborations">
+                </div>
+
+                <div class="post-content-body">
+                    <p>In astrology, Saturn's Return refers to when this giant planet of time and responsibility returns
+                        to where it was at the time of birth. Every 29 years or so, Saturn returns to usher us into the
+                        next chapter, with its first return arriving on the cusp of thirty. This is a period of
+                        reflection on who we are compared to who we want to be. No longer can we preface plans with,
+                        "when I grow up" because the future has arrived.</p>
+                    <p>It is the pressure of time and growth, but also the power that comes from taking authority over
+                        our life. </p>
+                    <p>It is the knowledge that a life stage defined by youth is coming to a close as the great unknown
+                        future approaches. </p>
+                    <p>We are looking for stories and experiences of transitions during times of Saturn's return.
+                        However you choose to represent this growth, struggle, pressure, or power is up to you. </p>
+                    <p>Even if you don't follow the cycles of the sky, but these themes feel familiar, please feel
+                        encouraged to get in contact.</p>
+                    <!--kg-card-begin: html--><a class="typeform-share button large primary"
+                        href="https://form.typeform.com/to/jLw8wwgQ" data-mode="drawer_right" target="_blank">
+                        Contact Us
+                    </a>
+
+                    <script async="false">
+                        (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()
+                    </script>
+
+
+                    <!--kg-card-end: html-->
+                </div>
+
+
+                <footer class="post-content-footer">
+
+
+
+                </footer>
+
+
+            </article>
+
+
+
+        </div>
+    </main>
